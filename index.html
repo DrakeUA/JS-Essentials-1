@@ -8,8 +8,11 @@
 
 <body>
     <script>
-        var event = prompt("Siri calling, what event i must create?", "party");
+        var name = "Alex";
+        var time = "9:00";
+        var city = "New-York";
         var isNumber = /^[0-9.]+$/.test(event);
+        var event = prompt("Siri calling, what event i must create?", "party");
         // user pressed OK, but the input field was empty
         if (event === "") {
             alert("Sorry, but input field was empty, write smth");
@@ -24,7 +27,7 @@
         }
         //default
         else {
-            document.write("Alex has a " + event + " today at 9:00 in New-York");
+            document.write(name + " has a " + event + " today at " + time + " in " + city);
         }
     </script>
 </body>
