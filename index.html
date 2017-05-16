@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Homework-1</title>
+</head>
+<body>
+
+<script>
+    var event = prompt("Siri calling, what event i must create?","party");
+    var isNumber = /^[0-9.]+$/.test(event);
+    if(event === ""){
+        alert("Sorry, but input field was empty, write smth");
+    }
+    else if(event == null){
+        alert("Ok, user hit cancel, good luck");
+    }
+    else if(isNumber){
+        alert("Sorry, but write smth without numbers");
+    }
+    else{
+        document.write("Alex has a " +event+ " today at 9:00 in New-York");
+    }
+    
+</script>
+</body>
+</html>
